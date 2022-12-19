@@ -16,9 +16,9 @@ app.use(express.json());
 app.use(router);
 
 //static path
-app.use(express.static(path.join(__dirname, './react/crudapp/build')))
+app.use(express.static(path.join(__dirname, './React/build')))
 app.get('*', function(req,res){
-  res.sendFile(path.join(__dirname,'./React/crudapp/index.html'))
+  res.sendFile(path.join(__dirname,'./React/build/index.html'))
 })
 
 
